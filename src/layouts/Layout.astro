@@ -1,0 +1,24 @@
+---
+import "../styles/global.scss";
+import Banner from "../components/Banner.astro";
+---
+
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="icon" href="/favicon.ico" />
+    <meta name="generator" content={Astro.generator} />
+    <title>Astro Basics</title>
+
+    <link rel="stylesheet" href="/uswds/css/uswds.min.css" />
+    <script is:inline src="/uswds/js/uswds-init.min.js"></script>
+  </head>
+  <body>
+    <Banner />
+    <slot />
+    <script is:inline src="/uswds/js/uswds.min.js"></script>
+  </body>
+</html>

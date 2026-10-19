@@ -1,0 +1,19 @@
+{
+  "name": "astro",
+  "type": "module",
+  "version": "0.0.1",
+  "engines": {
+    "node": ">=22.22.0"
+  },
+  "scripts": {
+    "dev": "astro dev --host",
+    "build": "astro build",
+    "preview": "astro preview",
+    "astro": "astro"
+  },
+  "dependencies": {
+    "@uswds/uswds": "3.14.0",
+    "astro": "^7.4.0",
+    "sass": "^1.105.2"
+  }
+}
