@@ -1,6 +1,8 @@
 ---
 import "../styles/global.scss";
 import Banner from "../components/Banner.astro";
+import Header from "../components/Header.astro";
+import Footer from "../components/Footer.astro";
 ---
 
 <!doctype html>
@@ -18,7 +20,22 @@ import Banner from "../components/Banner.astro";
   </head>
   <body>
     <Banner />
-    <slot />
+    <Header />
+
+    <div class="usa-section">
+      <div class="grid-container">
+        <div class="grid-row grid-gap">
+          <main class="" id="main-content">
+            <div class="usa-prose">
+              <slot />
+            </div>
+          </main>
+        </div>
+      </div>
+    </div>
+
+    <Footer />
+
     <script is:inline src="/uswds/js/uswds.min.js"></script>
   </body>
 </html>
